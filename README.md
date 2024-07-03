@@ -1,5 +1,7 @@
 # Linux-Stuff
 
+![Linux Tux penguin mascot](https://en.wikipedia.org/wiki/Linux#/media/File:Tux.svg)
+
 ## Purpose
 
 I have created this repo as a notebook for Linux commands. I have recently switched from Windows to Linux and I taught it might be useful to save the main bash commands somewhere.
