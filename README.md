@@ -1,6 +1,6 @@
 # Linux-Stuff
 
-![Linux Tux penguin mascot](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg)
+![Linux Tux penguin mascot](https://icon2.cleanpng.com/20180526/viq/kisspng-linux-tux-computer-icons-5b09f4802d7dc4.3209953815273790721863.jpg)
 
 ## Purpose
 
