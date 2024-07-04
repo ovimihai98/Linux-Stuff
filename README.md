@@ -82,6 +82,22 @@ tree => app to better see the directory structure (sudo apt install tree)
 -  tree -d . => prints only directories
 -  tree -f . => prints absolute paths
 
+##The ls Command
 
+ls /path => lists the contents of the specified path
+ls without arguments lists the contents of the current directory
+ls can list multiple directories if provided multiple arguments
+
+###Options for ls command
+-l => long listing
+-a => listing all files and directories including hidden ones (.name_of_file is example of a hidden file)
+-1 => listing on a single column
+-d => displaying information about the directory, not about its contents
+-h => displaying the size in human readable format
+-S => displaying sorting by size
+-X => sorting by extension
+--hide=[file_name] => hiding [file_name]
+-R => displaying a directory recursively
+-i => displaying the inode number
 
 
