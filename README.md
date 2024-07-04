@@ -22,7 +22,7 @@ CTRL + C => stops the current command
 
 CTRL + R => reverse searching into history
 
-##Getting Help
+## Getting Help
 
 `man` [command] => displays a Man page of the command you set as argumment
 Ex: man ls
@@ -36,7 +36,7 @@ Shortcuts in man:
   - ?[string] => searches backwards for the specific string
   - n/N => next/previous apperance
 
-##Bash History
+## Bash History
 
 `history` => shows history of the bash commands
 
@@ -60,7 +60,7 @@ passwd [user] => setting password to a specific user
 
 sudo su => becoming temporary root in the terminal
 
-##Paths
+## Paths
 
 . => the current working directory
 
@@ -82,13 +82,13 @@ tree => app to better see the directory structure (sudo apt install tree)
 -  tree -d . => prints only directories
 -  tree -f . => prints absolute paths
 
-##The ls Command
+## The ls Command
 
 ls /path => lists the contents of the specified path
 ls without arguments lists the contents of the current directory
 ls can list multiple directories if provided multiple arguments
 
-###Options for ls command
+### Options for ls command
 -l => long listing
 -a => listing all files and directories including hidden ones (.name_of_file is example of a hidden file)
 -1 => listing on a single column
