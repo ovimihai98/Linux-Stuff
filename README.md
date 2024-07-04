@@ -20,7 +20,7 @@ CTRL + E => moves the cursor at the end of the line
 
 CTRL + C => stops the current command
 
-
+CTRL + R => reverse searching into history
 
 ##Getting Help
 
@@ -35,3 +35,53 @@ Shortcuts in man:
   - /[string] => searches forward for the specific string
   - ?[string] => searches backwards for the specific string
   - n/N => next/previous apperance
+
+##Bash History
+
+`history` => shows history of the bash commands
+
+`history` -d [num] => removes the [num] line from the history
+
+`history` -c => removes the entire history
+
+!! => rerunning the last command
+
+![num] => running a specific command from history
+
+!-[num] => running the last numth command from history
+
+##Getting Root access
+
+sudo [command] => runs the specific command as root
+
+sudo passswd root => setting password to root user
+
+passwd [user] => setting password to a specific user
+
+sudo su => becoming temporary root in the terminal
+
+##Paths
+
+. => the current working directory
+
+.. => the parent directory
+
+~ => home directory
+
+cd => change directory
+
+cd ~ => change to home directory
+
+cd - => changing to the last directory
+
+cd /path_to_directory => changes to the path_to_directory
+
+pwd => prints working direcotry
+
+tree => app to better see the directory structure (sudo apt install tree)
+-  tree -d . => prints only directories
+-  tree -f . => prints absolute paths
+
+
+
+
