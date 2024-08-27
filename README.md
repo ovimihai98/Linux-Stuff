@@ -135,5 +135,5 @@ shortcuts for less:
 tail file => shows the last 10 lines of a file (head shows the first 10)
 tail -n 25 file => show the last 25 lines of a file (or head to show first 25)
 tail -f file => shows the last 10 lines in real-time
-watch -n 3 => runs repeatedly a command with refresh of 3 seconds
+watch -n 3 => runs repeatedly a command with refresh of 3 second
 
