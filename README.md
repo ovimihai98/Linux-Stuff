@@ -99,5 +99,41 @@ ls can list multiple directories if provided multiple arguments
 - --hide=[file_name] => hiding [file_name]
 - -R => displaying a directory recursively
 - -i => displaying the inode number
+- -lu => displaying atime
+- -lt => displaying mtime
+- -lc => displaying ctime
 
+
+## File Types and Timestamps
+
+stat file.txt => displays all timestamps of the file
+touch file.txt => creates an empty file if it does not exist, update the timestamps if the file exists
+touch -a file.txt => changes only the access time to current time
+date => displaying the date and time
+cal => showing this month's calendar
+  - 2024 => calendar of the year 2024
+  - 7 2023 => calendar of a specific month in the year
+  - -3 show the calendar of the previous, current and next month
+date --set="date" setting the date and time
+
+
+## View Files
+
+Different modes of viewing files in terminal:
+
+cat file => displays the content of a file
+cat file1 file2 => displays the content of both files
+cat file1 file2 > file3 => concatenates the contents of file1 and file2 into file3
+
+less file => view a file using less (used for big files)
+shortcuts for less:
+  - q = quit
+  - enter = show next line
+  - space = show next screen
+  - /string = searches forward for a string (? searches backwards)
+
+tail file => shows the last 10 lines of a file (head shows the first 10)
+tail -n 25 file => show the last 25 lines of a file (or head to show first 25)
+tail -f file => shows the last 10 lines in real-time
+watch -n 3 => runs repeatedly a command with refresh of 3 seconds
 
