@@ -373,3 +373,96 @@ ping -c 5 [IP address] => sends 5 packets only
 
 By default Ping waits one second between sending packets, changed using -i option
 
+
+Commands for SSH
+
+ssh -p 22 username@server_ip => connecting to the server via port 22
+- -v => verbose
+
+
+configuring SSH can be done via changing the configuration file (/etc/ssh/ssh_config) then restarting the server
+
+Commands for SCP
+
+scp a.txt john@80.0.0.1:~ => copy a local file to a remote destination in the ~ directory
+- -P [portnr] => using a custom port
+
+NETSTAT and SS
+
+Used for Port Scanning on a local server
+
+netstat -tupan => display all open ports and connections
+- -t => TCP ports
+- -u => UDP ports
+- -p => PID and Name of the program listening
+- -a => all ports
+- -n => numerical addresses
+
+ss -tupan => same
+
+lsof => listing all files that are open
+- -u username => list all files opened by the procsesses of a specific user
+- -c process => list all files opened by a specific process
+- -iTCP -sTCP:LISTEN => list all files that have opened TCP ports
+
+NMAP
+
+Scanning ports opened on other servers
+
+nmap ip_address => scanns opened ports of the server with ip address
+- -p- [ip_address] => same
+
+
+## Cron Jobs
+
+Crontabs can be found in /var/spool/cron/crontabs
+
+crontab -e => editing the current user's crontab file
+All scripts in following directories will run as root at that interval:
+/etc/cron.hourly
+/etc/cron.daily  
+/etc/cron.hourly  
+/etc/cron.monthly
+/etc/cron.weekly
+
+## Getting Harware Information
+
+lshw => diplay full hardware information
+- -short => short format
+- -json/html => json or html format
+
+lscpu => information about CPU
+
+dmidecode -t memory => info about the installed RAM memory
+
+free -m => info about free/used memory
+
+lspci => info about pci buses and about the devices connected to them
+
+lsusb => info about USB controllers and connected devices
+
+fdisk/lsblk => info about hard disks
+
+mount [name of device file] [mountpoint directory] => mounting a device on a specific directory
+
+umount => unmounting
+
+## Systemd
+
+systemd-analyze => show info about the boot process
+
+systemctl list-units => listing all active units systemd knows about
+
+systemctl status [service] => check the status of a service
+
+options for systemctl:
+- status
+- stop
+- start
+- restart
+- enable
+- disable
+- is-enabled
+- reload
+- mask (stops and disables service)
+- umask
